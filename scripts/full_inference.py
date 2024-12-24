@@ -1,5 +1,6 @@
 import os
 from my_package.inference import perform_inference
+from my_package.inference import perform_inference
 from my_package.fix_predictions import fix_predictions_format
 from ultralytics import YOLO
 from models.download_models import download_models
