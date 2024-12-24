@@ -16,7 +16,7 @@ setup(
         "numpy>=1.21.6",
         "Pillow>=9.0.1",
         "torch>=1.10.0",
-        "thop @ git+https://github.com/Lyken17/pytorch-OpCounter.git",
+    
     ],
     entry_points={
         "console_scripts": [
