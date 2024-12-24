@@ -2,7 +2,7 @@ import os
 import json
 from PIL import Image, ImageDraw
 from ultralytics import YOLO
-
+def main():
 # Mapping YOLO classes to COCO categories
 yolo_to_coco_category = {
     0: {"id": 1, "name": "pedestrian"},
