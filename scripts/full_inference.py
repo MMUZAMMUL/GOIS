@@ -1,39 +1,59 @@
 import os
 import sys
 import argparse
+from ultralytics import YOLO, YOLOWorld, RTDETR
 
 # Add the project root directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from my_package.inference import perform_inference
 from my_package.fix_prediction import fix_predictions_format
-from ultralytics import YOLO
 
+def load_model(model_path, model_type):
+    """
+    Load the appropriate model based on the model type.
+    """
+    if model_type == "YOLO":
+        return YOLO(model_path)
+    elif model_type == "YOLOWorld":
+        return YOLOWorld(model_path)
+    elif model_type == "RTDETR":
+        return RTDETR(model_path)
+    else:
+        raise ValueError(f"Unsupported model type: {model_type}")
 
-def main(args):
+def main():
     """
-    Main function to perform full inference.
+    Main function to perform GOIS inference.
     """
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description="Perform GOIS inference using YOLO or YOLOWorld or RTDETR.")
+    parser.add_argument("--images_folder", type=str, required=True, help="Path to the images folder.")
+    parser.add_argument("--model_path", type=str, required=True, help="Path to the model file.")
+    parser.add_argument("--model_type", type=str, required=True, choices=["YOLO", "YOLOWorld", "RTDETR"], help="Type of model (e.g., YOLO, YOLOWorld,RTDETR).")
+    parser.add_argument("--output_base_path", type=str, required=True, help="Base path to save output files.")
+    args = parser.parse_args()
+
+    # Extract model name and type
     images_folder = args.images_folder
     model_path = args.model_path
+    model_type = args.model_type
     output_base_path = args.output_base_path
 
-    # Extract model name from the model path
+    # Generate output paths
     model_name = os.path.splitext(os.path.basename(model_path))[0]
     predictions_path = os.path.join(output_base_path, f"{model_name}_full_inference.json")
     annotated_images_folder = os.path.join(output_base_path, f"{model_name}_full_inference_images_output")
 
-    # Ensure the model file exists
+    # Ensure paths exist
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found: {model_path}")
-
-    # Ensure output directories exist
     os.makedirs(output_base_path, exist_ok=True)
     os.makedirs(annotated_images_folder, exist_ok=True)
 
-    # Load YOLO model
-    print(f"Loading model from: {model_path}")
-    model = YOLO(model_path)
+    # Load the model
+    print(f"Loading {model_type} model from: {model_path}")
+    model = load_model(model_path, model_type)
 
     # Perform inference
     print("Performing inference...")
@@ -48,12 +68,5 @@ def main(args):
     print(f"Predictions saved to: {predictions_path}")
     print(f"Annotated images saved to: {annotated_images_folder}")
 
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Perform full inference using YOLO.")
-    parser.add_argument("--images_folder", type=str, required=True, help="Path to the folder containing images.")
-    parser.add_argument("--model_path", type=str, required=True, help="Path to the YOLO model file.")
-    parser.add_argument("--output_base_path", type=str, required=True, help="Base directory for saving predictions and annotated images.")
-    args = parser.parse_args()
-
-    main(args)
+    main()
