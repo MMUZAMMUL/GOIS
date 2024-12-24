@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="gois",  # Package name
-    version="0.1.0",  # Initial version
+    name="gois",
+    version="0.1.0",
     description="A package for GOIS-based inference and evaluation",
     author="MUHAMMAD MUZAMMUL",
-    author_email="munagreat@gmail.com",
+    author_email="munagreat123@gmail.com",
     url="https://github.com/MMUZAMMUL/GOIS",
-    packages=find_packages(),  # Automatically find all packages in 'gois/'
-    include_package_data=True,  # Include non-Python files like data
+    packages=find_packages(),  # Automatically finds the 'my_package' package
+    include_package_data=True,
     install_requires=[
         "ultralytics>=8.0.0",
         "gdown>=4.5.1",
@@ -16,14 +16,15 @@ setup(
         "numpy>=1.21.6",
         "Pillow>=9.0.1",
         "torch>=1.10.0",
+        "thop @ git+https://github.com/Lyken17/pytorch-OpCounter.git",
     ],
     entry_points={
         "console_scripts": [
-            "gois-download-data=gois.download_data:download_dataset",
-            "gois-download-models=gois.download_models:download_ultralytics_models",
+            "gois-download-data=my_package.download_data:main",
+            "gois-download-models=models.download_models:download_ultralytics_models",
             "gois-full-inference=scripts.full_inference:main",
             "gois-gois-inference=scripts.gois_inference:main",
-            "gois-evaluate-full=scripts.evaluate_full:main",
+            "gois-evaluate-full=scripts.evaluate_full_inference:main",
             "gois-evaluate-gois=scripts.evaluate_gois:main",
         ]
     },
