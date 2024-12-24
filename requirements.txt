@@ -9,3 +9,5 @@ matplotlib>=3.4.3
 scipy>=1.7.3
 tqdm>=4.62.3
 requests>=2.26.0
+thop @ git+https://github.com/Lyken17/pytorch-OpCounter.git
+
