@@ -1,10 +1,16 @@
+import sys
 import os
+
+# Add the project root directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from my_package.preprocessing import custom_to_coco, save_coco_format
 
+
 # Paths
-annotations_folder = './data/ground_truth/annotations'
-images_folder = './data/ground_truth/images'
-output_coco_path = './data/ground_truth/ground_truth_coco.json'
+annotations_folder = '/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/annotations'
+images_folder = '/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/images'
+output_coco_path = '/content/GOIS/data/ground_truth/ground_truth_coco.json'
 
 def main():
     """
