@@ -1,0 +1,30 @@
+name: Publish Python Package
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel twine
+
+    - name: Build and publish
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{pypi-AgENdGVzdC5weXBpLm9yZwIkYjA2NGQwNDMtNjIyMi00YzZmLWIyNGUtZjUzNjMzMTA0MzVlAAIqWzMsIjE3OWYzN2FkLTg1NDgtNDRiYi1hODgxLWIwODZiNWYzYjk4NSJdAAAGIDzZDvxmTcg-WjDAvNsLDvR6OV4WmsNDtaD6Ufj_1jnc }}
+      run: |
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
