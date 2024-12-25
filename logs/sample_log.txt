@@ -1,0 +1,4 @@
+[INFO] 2024-12-23 14:00:01 - System initialized.
+[INFO] 2024-12-23 14:01:10 - Model loaded successfully: YOLOv8.
+[WARNING] 2024-12-23 14:02:15 - Dummy log entry for testing purposes.
+[ERROR] 2024-12-23 14:03:25 - File not found: ./nonexistent_path/data.json

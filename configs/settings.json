@@ -1,0 +1,7 @@
+{
+    "project_name": "GOIS",
+    "version": "1.0",
+    "log_level": "INFO",
+    "enable_analytics": true,
+    "max_inference_time": 120
+}
