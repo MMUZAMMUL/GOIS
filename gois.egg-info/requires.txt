@@ -1,0 +1,6 @@
+ultralytics>=8.0.0
+gdown>=4.5.1
+pycocotools>=2.0.6
+numpy>=1.21.6
+Pillow>=9.0.1
+torch>=1.10.0
