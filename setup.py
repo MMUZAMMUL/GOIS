@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gois1",
-    version="0.v1.0",
+    version="0.1",
     description="A package for GOIS-based inference, evaluation, and preprocessing",
     author="MUHAMMAD MUZAMMUL",
     author_email="munagreat123@gmail.com",
@@ -16,7 +16,6 @@ setup(
         "numpy>=1.21.6",
         "Pillow>=9.0.1",
         "torch>=1.10.0",
-        "thop @ git+https://github.com/Lyken17/pytorch-OpCounter.git",
     ],
     entry_points={
         "console_scripts": [
