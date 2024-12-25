@@ -16,4 +16,3 @@ Requires-Dist: pycocotools>=2.0.6
 Requires-Dist: numpy>=1.21.6
 Requires-Dist: Pillow>=9.0.1
 Requires-Dist: torch>=1.10.0
-Requires-Dist: thop@ git+https://github.com/Lyken17/pytorch-OpCounter.git
