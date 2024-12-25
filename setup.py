@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="gois",
-    version="0.1.0",
-    description="A package for GOIS-based inference, evaluation, and preprocessing",
+    version="1.0.0",  # Updated version for production release
+    description="A professional package for GOIS-based inference, evaluation, and preprocessing",
     author="MUHAMMAD MUZAMMUL",
     author_email="munagreat123@gmail.com",
     url="https://github.com/MMUZAMMUL/GOIS",
-    packages=find_packages(include=["my_package", "my_package.*"]),  # Include the `my_package` directory
+    packages=find_packages(include=["my_package", "my_package.*", "scripts.*"]),  # Include main packages and scripts
     include_package_data=True,  # Include non-Python files specified in MANIFEST.in
     install_requires=[
         "ultralytics>=8.0.0",
@@ -16,17 +16,20 @@ setup(
         "numpy>=1.21.6",
         "Pillow>=9.0.1",
         "torch>=1.10.0",
-        "thop @ git+https://github.com/Lyken17/pytorch-OpCounter.git",
+        "pandas>=1.3.5",
+        "matplotlib>=3.4.3",
     ],
     entry_points={
         "console_scripts": [
-            "gois-download-data=data.download_data:main",
-            "gois-download-models=Models.download_models:main",
-            "gois-full-inference=my_package.full_inference:main",
-            "gois-gois-inference=my_package.gois_inference:main",
-            "gois-evaluate-full=scripts.evaluate_full_inference:main",
-            "gois-evaluate-gois=scripts.evaluate_gois:main",
-            "gois-generate-ground-truth=scripts.generate_ground_truth:main",
+            "gois-download-data=data.download_data:main",  # Download dataset
+            "gois-download-models=Models.download_models:main",  # Download pretrained models
+            "gois-full-inference=scripts.full_inference:main",  # Full inference
+            "gois-gois-inference=scripts.gois_inference:main",  # GOIS inference
+            "gois-evaluate-full=scripts.evaluate_prediction:main",  # Evaluate full inference
+            "gois-evaluate-gois=scripts.evaluate_gois:main",  # Evaluate GOIS
+            "gois-generate-ground-truth=scripts.generate_ground_truth:main",  # Generate ground truth in COCO format
+            "gois-calculate-results=scripts.calculate_results:main",  # Compare results
+            "gois-evaluate-upscaling=scripts.evaluate_upscaling:main",  # Evaluate with upscaling
         ]
     },
     classifiers=[
@@ -34,5 +37,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.7",  # Ensure compatibility with your tools
 )

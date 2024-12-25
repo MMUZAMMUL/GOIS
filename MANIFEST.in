@@ -1,4 +1,8 @@
 include README.md
+include LICENSE
+include SECURITY.md
+include requirements.txt
 recursive-include data *
-recursive-include examples *
-recursive-include tests *
+recursive-include configs *
+recursive-include docs *
+recursive-include Models *
