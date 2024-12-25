@@ -1,38 +1,20 @@
-Custom License for GOIS Project
+# Custom License for GOIS
 
-Copyright (c) 2024 MMUZAMMUL
+Copyright (c) 2024 MMUZAMMUL. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to use
-the Software solely for educational and learning purposes, subject to the
-following conditions:
+Permission is hereby granted to individuals to access this software for **learning purposes only**. Any form of copying, modification, reproduction, redistribution, or use of the software and its associated algorithms, logic, or components for commercial, non-commercial, or personal purposes without explicit written permission from the author is strictly prohibited.
 
-Restrictions
+This software and its algorithms are **patented intellectual property** owned by MMUZAMMUL. Unauthorized use, distribution, or reverse engineering of the software is a violation of international copyright and intellectual property laws.
 
-The Software, its algorithms, and its intellectual property (including
-logic, methods, and designs) are patent-protected and may not be used
-for commercial purposes, personal projects, or any activity beyond learning
-without explicit written permission from the author.
-Redistribution, republication, or derivative works based on this Software
-are strictly prohibited unless explicitly authorized by the author.
-Ownership
+**You may:**
+- Study the code for learning purposes only.
 
-All intellectual property rights related to the Software, including but
-not limited to its algorithms, methods, and implementation details,
-remain solely with the author.
-Limitation of Liability
+**You may not:**
+- Use this software or its algorithms for commercial or non-commercial purposes.
+- Redistribute, reproduce, or modify this code.
+- Incorporate this work or its logic into other projects without explicit written consent from the author.
 
-The Software is provided "as is," without warranty of any kind, express or
-implied, including but not limited to the warranties of merchantability,
-fitness for a particular purpose, and non-infringement.
-In no event shall the author be liable for any claim, damages, or other
-liability arising from, out of, or in connection with the Software or
-its use.
-Acknowledgment
+**Disclaimer:**
+The software is provided "as is," without warranty of any kind, express or implied. The author shall not be held liable for any claim, damages, or other liability arising from the use of this software.
 
-This license must be included in all copies or substantial portions of
-the Software.
-The use of the Software implies agreement with these terms.
-Note: Unauthorized use of the Software, its algorithms, or its intellectual
-property may result in legal consequences under applicable intellectual property
-laws.
+The author retains all rights to the software, its logic, and the methodologies contained herein. Any infringement will result in legal action.
