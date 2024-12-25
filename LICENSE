@@ -1,21 +1,38 @@
-MIT License
+Custom License for GOIS Project
 
 Copyright (c) 2024 MMUZAMMUL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software and associated documentation files (the "Software"), to use
+the Software solely for educational and learning purposes, subject to the
+following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Restrictions
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+The Software, its algorithms, and its intellectual property (including
+logic, methods, and designs) are patent-protected and may not be used
+for commercial purposes, personal projects, or any activity beyond learning
+without explicit written permission from the author.
+Redistribution, republication, or derivative works based on this Software
+are strictly prohibited unless explicitly authorized by the author.
+Ownership
+
+All intellectual property rights related to the Software, including but
+not limited to its algorithms, methods, and implementation details,
+remain solely with the author.
+Limitation of Liability
+
+The Software is provided "as is," without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement.
+In no event shall the author be liable for any claim, damages, or other
+liability arising from, out of, or in connection with the Software or
+its use.
+Acknowledgment
+
+This license must be included in all copies or substantial portions of
+the Software.
+The use of the Software implies agreement with these terms.
+Note: Unauthorized use of the Software, its algorithms, or its intellectual
+property may result in legal consequences under applicable intellectual property
+laws.
