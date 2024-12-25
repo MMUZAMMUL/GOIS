@@ -1,0 +1,8 @@
+[console_scripts]
+gois-download-data = data.download_data:main
+gois-download-models = Models.download_models:main
+gois-evaluate-full = scripts.evaluate_full_inference:main
+gois-evaluate-gois = scripts.evaluate_gois:main
+gois-full-inference = my_package.full_inference:main
+gois-generate-ground-truth = scripts.generate_ground_truth:main
+gois-gois-inference = my_package.gois_inference:main
