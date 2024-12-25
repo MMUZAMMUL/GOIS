@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gois",
-    version="0.1.0",
+    version="v1.0.0",
     description="A package for GOIS-based inference, evaluation, and preprocessing",
     author="MUHAMMAD MUZAMMUL",
     author_email="munagreat123@gmail.com",
