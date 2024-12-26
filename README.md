@@ -5,8 +5,7 @@
 ## Key Resources
 
 - **Results Graph**:
-- [![results](examples/full results.png)]
-
+[![RESULTS](examples/full results.png)](https://youtu.be/T5t5eb_w0S4)
 
 - **My Benchmarks Results**:  
   Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
