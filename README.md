@@ -22,7 +22,7 @@ By(MUZAMMUL-ZJU)
       <h3>Key Resources</h3>
       <ul>
         <li><b>My Benchmarks Results:</b>  
-        Directly download and verify the benchmarks from the <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Benhmarks Repository</a>.</li>
+        Directly download Benchmarks, Evaluate by STEP# 6&7.Results FI-Det, GOIS-Det COCO .json already available at <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Benhmarks Repository</a>.</li>
         <li><b>Live Demo:</b>  
         Watch the complete live demonstration on:  
           <ul>
@@ -65,39 +65,7 @@ By(MUZAMMUL-ZJU)
 ```bash
 git clone https://github.com/MMUZAMMUL/GOIS.git
 cd GOIS
-
-
-## Overview
-
-GOIS is a robust framework designed for **inference slicing**, providing enhanced evaluation metrics and comparisons for object detection models. The project features functionality for **data preparation**, **model evaluation**, and **comparative analysis**. It supports **full inference** and **sliced inference (GOIS)** to benchmark performance improvements.
-
----
-
-## Key Features
-
-- **Full Inference Predictions (FI-Det):** Evaluate models on complete images.
-- **Guided Object Inference Slicing (GOIS-Det):** Perform inference using a slicing approach for improved accuracy.
-- **Ground Truth Generation:** Prepare COCO-style ground truth annotations for evaluation.
-- **Evaluation Metrics:** Analyze performance with COCO metrics, including precision, recall, and IoU.
-- **Upscaled Results:** Visualize upscaled metrics for enhanced understanding of improvements.
-
----
-
-## Installation
-
-### Clone Repository
-```bash
-git clone https://github.com/MMUZAMMUL/GOIS.git
-cd GOIS
 ```
-
-### Install Requirements
-Install the necessary dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-
 ## Usage Instructions
 
 ### 1. **Download Data**
