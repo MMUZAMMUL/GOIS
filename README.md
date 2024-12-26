@@ -1,16 +1,23 @@
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
-    <h1>Enhancing Tiny Object Detection Without Fine-Tuning</h1>
-    <p><b>Dynamic Adaptive Guided Object Inference Slicing Framework</b> with Latest YOLO Models and RT-DETR Transformer</p>
-  </div>
-  <div>
-    <img src="examples/full_results.png" alt="Results Graph" style="width: 300px; height: auto; margin-left: 20px;">
-  </div>
-</div>
+# Enhancing Tiny Object Detection Without Fine-Tuning  
+**Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
+
+---
+
+<table>
+  <tr>
+    <td>
+      <p>Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).</p>
+    </td>
+    <td>
+      <img src="examples/full_results.png" alt="Results Graph" width="300">
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Key Resources
+
 - **My Benchmarks Results**:  
   Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
 
@@ -21,17 +28,13 @@
 
 ---
 
-## Overview
+## Highlights
 
-Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).
-
-### Highlights
 - **Adaptive Slicing:** Mitigates boundary artifacts and optimizes computational efficiency by reallocating resources dynamically.
 - **Architecture-Agnostic:** Integrates seamlessly with diverse state-of-the-art detection models (YOLO11, RT-DETR-L, YOLOv8n, etc.) without requiring retraining.
 - **Validated Results:** Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.
 - **Significant Improvements:** Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.
 
----
 
 ## Key Features
 
