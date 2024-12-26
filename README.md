@@ -4,6 +4,7 @@
 
 # Enhancing Tiny Object Detection Without Fine-Tuning  
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
+By(MUZAMMUL-ZJU)
 
 ---
 
@@ -30,7 +31,6 @@
             <li><a href="data/dataset.md">Data download instructions</a></li>
             <li><a href="https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link">15% Dataset of VisdroneTrainDet2019</a></li>
             <li><a href="https://drive.google.com/file/d/1a2oHjcEcwXP8oUF95qiwrqzACb2YlUhn/view">Full-Dataset link Visdrone2019</a></li>
-            
           </ul>
         </li>
       </ul>
@@ -107,36 +107,36 @@ Follow instructions in [Data-download-instructions](data/dataset.md) to prepare 
 ### 2. **Download Models**
 Run the script to download required models:
 ```bash
-python Models/download_models.py
+python Models/download_models.py  # OR directly download from Ultralytics and upload in folder
 ```
 
 ### 3. **Generate Ground Truth**
 Generate COCO-format ground truth annotations:
 ```bash
 python scripts/generate_ground_truth.py \
-    --annotations_folder <path_to_annotations> \
-    --images_folder <path_to_images> \
-    --output_coco_path ./data/ground_truth/ground_truth_coco.json
+    --annotations_folder "<path_to_annotations>" \
+    --images_folder "<path_to_images>" \
+    --output_coco_path ./data/ground_truth/ground_truth_coco.json  #Give path to save
 ```
 
 ### 4. **Run Full Inference**
 Perform full image inference:
 ```bash
 python scripts/full_inference.py \
-    --images_folder <path_to_images> \
-    --model_path ./Models/yolov8s-worldv2.pt \
-    --model_type YOLOWorld \
-    --output_base_path ./data/full_inference/
+    --images_folder "<path_to_images>" \  # Give path of testing images
+    --model_path "./Models/yolo11n.pt" \   #Give path of model to perform prediction
+    --model_type "YOLO" # YOLO or RTDETR or YOLOWorld
+    --output_base_path "./data/FI_Predictions/"  # Give path to save output images
 ```
 
 ### 5. **Run GOIS Inference**
 Perform sliced inference using GOIS:
 ```bash
 python scripts/gois_inference.py \
-    --images_folder <path_to_images> \
-    --model_path ./Models/yolov8s-worldv2.pt \
-    --model_type YOLOWorld \
-    --output_base_path ./data/gois_results/
+     --images_folder "<path_to_images>" \  # Give path of testing images
+    --model_path "./Models/yolov8s-worldv2.pt" \   #Give path of model to perform prediction
+    --model_type "YOLO" # YOLO or RTDETR or YOLOWorld
+    --output_base_path "./data/gois_Predictions/"  # Give path to save output images
 ```
 
 ### 6. **Evaluate Results**
@@ -144,7 +144,7 @@ python scripts/gois_inference.py \
 ```bash
 python scripts/evaluate_prediction.py \
     --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
-    --predictions_path ./data/full_inference/full_inference.json \
+    --predictions_path ./data/FI_Predictions/full_inference.json \
     --iou_type bbox
 ```
 
@@ -152,7 +152,7 @@ python scripts/evaluate_prediction.py \
 ```bash
 python scripts/evaluate_prediction.py \
     --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
-    --predictions_path ./data/gois_results/gois_inference.json \
+    --predictions_path ./data/gois_Predictions/gois_inference.json \
     --iou_type bbox
 ```
 
@@ -161,8 +161,8 @@ Compare evaluation metrics and calculate percentage improvements:
 ```bash
 python scripts/calculate_results.py \
     --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
-    --full_inference_path ./data/full_inference/full_inference.json \
-    --gois_inference_path ./data/gois_results/gois_inference.json
+    --full_inference_path ./data/FI_Predictions/full_inference.json \
+    --gois_inference_path ./data/gois_Predictions/gois_inference.json
 ```
 
 ### 8. **Upscale Metrics**
@@ -170,8 +170,8 @@ Visualize results with upscaled metrics:
 ```bash
 python scripts/evaluate_upscaling.py \
     --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
-    --full_inference_path ./data/full_inference/full_inference.json \
-    --gois_inference_path ./data/gois_results/gois_inference.json
+    --full_inference_path ./data/FI_Predictions/full_inference.json \
+    --gois_inference_path ./data/gois_Predictions/gois_inference.json
 ```
 
 ---
@@ -188,7 +188,8 @@ For reporting vulnerabilities, refer to [SECURITY.md](SECURITY.md).
 ---
 
 ## Contact
-Author: **Muhammad Muzammul**  
-Email: [munagreat123@gmail.com](mailto:muzamal@zju.edu.cn)  
+Author: **Muhammad Muzammul**  PhD Scholar Zhejinag University,China
+Email: [muzamal@zju.edu.cn](mailto:muzamal@zju.edu.cn)  
+Email: [munagreat123@gmail.com](mailto:munagreat123@gmail.com)  
 
 ```
