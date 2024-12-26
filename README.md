@@ -188,7 +188,8 @@ For reporting vulnerabilities, refer to [SECURITY.md](SECURITY.md).
 ---
 
 ## Contact
-Author: **Muhammad Muzammul**  PhD Scholar Zhejinag University,China
+Author: **Muhammad Muzammul**  
+PhD Scholar-College of Computer Science and Technology, Zhejinag University,China.\
 Email: [muzamal@zju.edu.cn](mailto:muzamal@zju.edu.cn)  
 Email: [munagreat123@gmail.com](mailto:munagreat123@gmail.com)  
 
