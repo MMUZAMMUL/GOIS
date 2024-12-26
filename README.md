@@ -1,3 +1,4 @@
+
 # Enhancing Tiny Object Detection Without Fine-Tuning  
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
 
@@ -5,44 +6,51 @@
 
 <table>
   <tr>
+    <td colspan="2">
+      Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).
+    </td>
+  </tr>
+  <tr>
     <td>
-      <p>Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).</p>
+      <img src="examples/_results.png" alt="Results Graph" width="400">
     </td>
     <td>
-      <img src="examples/full_results.png" alt="Results Graph" width="300">
+      <h3>Key Resources</h3>
+      <ul>
+        <li><b>My Benchmarks Results:</b>  
+        Directly download and verify the benchmarks from the <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Repository</a>.</li>
+        <li><b>Live Demo:</b>  
+        Watch the complete live demonstration on:  
+          <ul>
+            <li><a href="https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47">Bilibili</a></li>
+            <li><a href="https://youtu.be/T5t5eb_w0S4">YouTube</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Highlights</h3>
+      <ul>
+        <li><b>Adaptive Slicing:</b> Mitigates boundary artifacts and optimizes computational efficiency by reallocating resources dynamically.</li>
+        <li><b>Architecture-Agnostic:</b> Integrates seamlessly with diverse state-of-the-art detection models (YOLO11, RT-DETR-L, YOLOv8n, etc.) without requiring retraining.</li>
+        <li><b>Validated Results:</b> Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.</li>
+        <li><b>Significant Improvements:</b> Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.</li>
+      </ul>
+    </td>
+    <td>
+      <h3>Key Features</h3>
+      <ul>
+        <li><b>Full Inference Predictions (FI-Det):</b> Evaluate models on complete images for baseline metrics.</li>
+        <li><b>Guided Object Inference Slicing (GOIS-Det):</b> Dynamically adapt inference slicing for improved detection accuracy, particularly for small objects.</li>
+        <li><b>Ground Truth Generation:</b> Generate COCO-style annotations for evaluating detection metrics.</li>
+        <li><b>Evaluation Metrics:</b> Assess performance with detailed COCO metrics, including precision, recall, and IoU across object scales.</li>
+        <li><b>Upscaled Results:</b> Visualize metrics with upscaled values for enhanced comparison and analysis.</li>
+      </ul>
     </td>
   </tr>
 </table>
-
----
-
-## Key Resources
-
-- **My Benchmarks Results**:  
-  Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
-
-- **Live Demo**:  
-  Watch the complete live demonstration on:
-  - [**Bilibili**: Enhancing Tiny Object Detection: Guided Object Inference Slicing-GOIS](https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47)
-  - [**YouTube**](https://youtu.be/T5t5eb_w0S4)
-
----
-
-## Highlights
-
-- **Adaptive Slicing:** Mitigates boundary artifacts and optimizes computational efficiency by reallocating resources dynamically.
-- **Architecture-Agnostic:** Integrates seamlessly with diverse state-of-the-art detection models (YOLO11, RT-DETR-L, YOLOv8n, etc.) without requiring retraining.
-- **Validated Results:** Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.
-- **Significant Improvements:** Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.
-
-
-## Key Features
-
-- **Full Inference Predictions (FI-Det):** Evaluate models on complete images for baseline metrics.
-- **Guided Object Inference Slicing (GOIS-Det):** Dynamically adapt inference slicing for improved detection accuracy, particularly for small objects.
-- **Ground Truth Generation:** Generate COCO-style annotations for evaluating detection metrics.
-- **Evaluation Metrics:** Assess performance with detailed COCO metrics, including precision, recall, and IoU across object scales.
-- **Upscaled Results:** Visualize metrics with upscaled values for enhanced comparison and analysis.
 
 ## Installation
 
