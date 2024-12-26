@@ -1,3 +1,6 @@
+### License
+
+[**MIT License**](LICENSE) - All rights reserved to the author. This project may be used for study and educational purposes, but **redistribution, redevelopment, or use of the code for personal or commercial purposes is strictly prohibited without the author's written consent.**
 
 # Enhancing Tiny Object Detection Without Fine-Tuning  
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
@@ -94,8 +97,8 @@ pip install -r requirements.txt
 ## Usage Instructions
 
 ### 1. **Download Data**
-Follow instructions in `data/dataset.md` to prepare the dataset or directly download the 15% subset:
-[15% Subset Download Link](https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link)
+Follow instructions in [Data-download-instructions](data/dataset.md) to prepare the dataset or directly download the 15% subset:  
+[**15% Subset Download Link**](https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link)
 
 ### 2. **Download Models**
 Run the script to download required models:
