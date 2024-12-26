@@ -4,7 +4,7 @@
 
 ## Key Resources
 
-- **Results Graph**: ![Results Graph](path_to_your_image.png)  
+- **Results Graph**: ![examples/full results.png)  
   *(Replace `path_to_your_image.png` with the actual path to your result image.)*
 
 - **My Benchmarks Results**:  
