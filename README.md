@@ -1,12 +1,16 @@
-# Enhancing Tiny Object Detection Without Fine-Tuning: Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+    <h1>Enhancing Tiny Object Detection Without Fine-Tuning</h1>
+    <p><b>Dynamic Adaptive Guided Object Inference Slicing Framework</b> with Latest YOLO Models and RT-DETR Transformer</p>
+  </div>
+  <div>
+    <img src="examples/full_results.png" alt="Results Graph" style="width: 300px; height: auto; margin-left: 20px;">
+  </div>
+</div>
 
 ---
 
 ## Key Resources
-- **Results Graph**: <img src="examples/_results.png" alt="Results Graph" width="600" height="400">
-
-
-
 - **My Benchmarks Results**:  
   Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
 
@@ -37,7 +41,6 @@ Tiny Object Detection (TOD) in high-resolution imagery poses significant challen
 - **Evaluation Metrics:** Assess performance with detailed COCO metrics, including precision, recall, and IoU across object scales.
 - **Upscaled Results:** Visualize metrics with upscaled values for enhanced comparison and analysis.
 
----
 ## Installation
 
 ### Clone Repository
