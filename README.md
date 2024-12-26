@@ -1,153 +1,129 @@
-# **GOIS Project Instructions**
+```markdown
+# GOIS: Guided Object Inference Slicing Framework
 
-Welcome to the **GOIS** project! This guide will walk you through the setup and usage of the project, including running full inference, GOIS inference, and evaluation of results.
+## Overview
 
----
-
-## **Project Structure**
-The project is organized as follows:
-
-```
-GOIS/
-├── my_package/                # Core logic for inference, evaluation, and prediction fixes
-│   ├── inference.py
-│   ├── gois_inference.py
-│   ├── fix_predictions.py
-│
-├── models/                    # Model management
-│   ├── download_models.py     # Script to download models
-│
-├── data/                      # Data and results
-│   ├── ground_truth/          # Ground truth JSON and input images
-│   ├── full_inference/        # Full inference results
-│   ├── gois_results/          # GOIS results
-│
-├── scripts/                   # Scripts for running tasks
-│   ├── full_inference.py      # Perform full inference
-│   ├── gois_inference.py      # Perform GOIS inference
-│   ├── evaluate_full_inference.py  # Evaluate full inference results
-│   ├── evaluate_gois.py       # Evaluate GOIS results
-│
-├── setup.py                   # Installable package setup
-├── requirements.txt           # Python dependencies
-└── instructions.md            # User guide (this file)
-```
+GOIS is a robust framework designed for **inference slicing**, providing enhanced evaluation metrics and comparisons for object detection models. The project features functionality for **data preparation**, **model evaluation**, and **comparative analysis**. It supports **full inference** and **sliced inference (GOIS)** to benchmark performance improvements.
 
 ---
 
-## **Setup**
+## Key Features
 
-### 1. **Clone the Repository**
-Clone the repository to your local system:
+- **Full Inference Predictions (FI-Det):** Evaluate models on complete images.
+- **Guided Object Inference Slicing (GOIS-Det):** Perform inference using a slicing approach for improved accuracy.
+- **Ground Truth Generation:** Prepare COCO-style ground truth annotations for evaluation.
+- **Evaluation Metrics:** Analyze performance with COCO metrics, including precision, recall, and IoU.
+- **Upscaled Results:** Visualize upscaled metrics for enhanced understanding of improvements.
+
+---
+
+## Installation
+
+### Clone Repository
 ```bash
-git clone https://github.com/yourusername/GOIS.git
+git clone https://github.com/MMUZAMMUL/GOIS.git
 cd GOIS
 ```
 
-### 2. **Install Dependencies**
-Install the required Python dependencies:
+### Install Requirements
+Install the necessary dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. **Download Models**
-Run the script to download all required models:
+
+## Usage Instructions
+
+### 1. **Download Data**
+Follow instructions in `data/dataset.md` to prepare the dataset or directly download the 15% subset:
+[15% Subset Download Link](https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link)
+
+### 2. **Download Models**
+Run the script to download required models:
 ```bash
-python models/download_models.py
+python Models/download_models.py
 ```
-This will save the models in the `./models/` directory.
 
-### 4. **Prepare Dataset**
-Place your dataset (images and annotations) in the `./data/ground_truth/` directory:
-- **Images:** Place input images in `./data/ground_truth/images/`.
-- **Annotations:** Ensure the ground truth COCO JSON file is saved as `./data/ground_truth/ground_truth_coco.json`.
-
----
-
-## **Running Inference**
-
-### **1. Full Inference**
-To perform full inference using a specific model:
+### 3. **Generate Ground Truth**
+Generate COCO-format ground truth annotations:
 ```bash
-python scripts/full_inference.py
+python scripts/generate_ground_truth.py \
+    --annotations_folder <path_to_annotations> \
+    --images_folder <path_to_images> \
+    --output_coco_path ./data/ground_truth/ground_truth_coco.json
 ```
-- The script will list all available models in `./models/`.
-- Select a model by entering its number.
-- Outputs:
-  - **Predictions JSON:** Saved in `./data/full_inference/{model_name}/{model_name}_predictions.json`.
-  - **Annotated Images:** Saved in `./data/full_inference/{model_name}/annotated_images/`.
 
----
-
-### **2. GOIS Inference**
-To perform GOIS inference:
+### 4. **Run Full Inference**
+Perform full image inference:
 ```bash
-python scripts/gois_inference.py
+python scripts/full_inference.py \
+    --images_folder <path_to_images> \
+    --model_path ./Models/yolov8s-worldv2.pt \
+    --model_type YOLOWorld \
+    --output_base_path ./data/full_inference/
 ```
-- The script will prompt you to select a model.
-- Outputs:
-  - **Predictions JSON:** Saved in `./data/gois_results/{model_name}/{model_name}_GOIS_predictions.json`.
-  - **Annotated Images:** Saved in `./data/gois_results/{model_name}/annotated_images/`.
 
----
-
-## **Evaluation**
-
-### **1. Evaluate Full Inference**
-To evaluate the full inference results:
+### 5. **Run GOIS Inference**
+Perform sliced inference using GOIS:
 ```bash
-python scripts/evaluate_full_inference.py
+python scripts/gois_inference.py \
+    --images_folder <path_to_images> \
+    --model_path ./Models/yolov8s-worldv2.pt \
+    --model_type YOLOWorld \
+    --output_base_path ./data/gois_results/
 ```
-- The script will prompt you to select the model whose results you want to evaluate.
-- Outputs:
-  - Displays Average Precision (AP) and Average Recall (AR) metrics.
 
----
-
-### **2. Evaluate GOIS**
-To evaluate GOIS results:
+### 6. **Evaluate Results**
+#### Evaluate Full Inference:
 ```bash
-python scripts/evaluate_gois.py
+python scripts/evaluate_prediction.py \
+    --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
+    --predictions_path ./data/full_inference/full_inference.json \
+    --iou_type bbox
 ```
-- The script will prompt you to select the model whose results you want to evaluate.
-- Outputs:
-  - Displays Average Precision (AP) and Average Recall (AR) metrics.
+
+#### Evaluate GOIS:
+```bash
+python scripts/evaluate_prediction.py \
+    --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
+    --predictions_path ./data/gois_results/gois_inference.json \
+    --iou_type bbox
+```
+
+### 7. **Compare Results**
+Compare evaluation metrics and calculate percentage improvements:
+```bash
+python scripts/calculate_results.py \
+    --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
+    --full_inference_path ./data/full_inference/full_inference.json \
+    --gois_inference_path ./data/gois_results/gois_inference.json
+```
+
+### 8. **Upscale Metrics**
+Visualize results with upscaled metrics:
+```bash
+python scripts/evaluate_upscaling.py \
+    --ground_truth_path ./data/ground_truth/ground_truth_coco.json \
+    --full_inference_path ./data/full_inference/full_inference.json \
+    --gois_inference_path ./data/gois_results/gois_inference.json
+```
 
 ---
 
-## **Customization**
+## Contributing
+Read the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
-### **Modify Dataset Paths**
-You can update the dataset paths in the scripts if your data is stored elsewhere. For example:
-- In `scripts/full_inference.py` and `scripts/gois_inference.py`, modify `images_folder` and `output_base_path` accordingly.
+## License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-### **Add New Models**
-If you want to add additional models:
-1. Add the model details to `models/download_models.py`.
-2. Run the script to download the new model.
+## Security
+For reporting vulnerabilities, refer to [SECURITY.md](SECURITY.md).
 
 ---
 
-## **Troubleshooting**
+## Contact
+Author: **Muhammad Muzammul**  
+Email: [munagreat123@gmail.com](mailto:munagreat123@gmail.com)  
 
-1. **Missing Models**
-   - Ensure models are downloaded correctly in the `./models/` directory by running:
-     ```bash
-     python models/download_models.py
-     ```
 
-2. **File Not Found Errors**
-   - Verify that the ground truth JSON file and input images are correctly placed in `./data/ground_truth/`.
-
-3. **Evaluation Metrics Not Displayed**
-   - Ensure predictions JSON files are correctly generated during inference.
-
----
-
-## **Contact**
-For any issues or feature requests, please contact:
-- **Email:** your.email@example.com
-- **GitHub Issues:** [https://github.com/yourusername/GOIS/issues](https://github.com/yourusername/GOIS/issues)
-
----
-
+```
