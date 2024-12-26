@@ -1,5 +1,50 @@
-```markdown
-# GOIS: Guided Object Inference Slicing Framework
+# Enhancing Tiny Object Detection Without Fine-Tuning: Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer
+
+---
+
+## Key Resources
+
+- **Results Graph**: ![Results Graph](path_to_your_image.png)  
+  *(Replace `path_to_your_image.png` with the actual path to your result image.)*
+
+- **My Benchmarks Results**:  
+  Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
+
+- **Live Demo**:  
+  Watch the complete live demonstration on:
+  - [**Bilibili**: Enhancing Tiny Object Detection: Guided Object Inference Slicing-GOIS](https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47)
+  - [**YouTube**](https://youtu.be/T5t5eb_w0S4)
+
+---
+
+## Overview
+
+Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).
+
+### Highlights
+- **Adaptive Slicing:** Mitigates boundary artifacts and optimizes computational efficiency by reallocating resources dynamically.
+- **Architecture-Agnostic:** Integrates seamlessly with diverse state-of-the-art detection models (YOLO11, RT-DETR-L, YOLOv8n, etc.) without requiring retraining.
+- **Validated Results:** Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.
+- **Significant Improvements:** Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.
+
+---
+
+## Key Features
+
+- **Full Inference Predictions (FI-Det):** Evaluate models on complete images for baseline metrics.
+- **Guided Object Inference Slicing (GOIS-Det):** Dynamically adapt inference slicing for improved detection accuracy, particularly for small objects.
+- **Ground Truth Generation:** Generate COCO-style annotations for evaluating detection metrics.
+- **Evaluation Metrics:** Assess performance with detailed COCO metrics, including precision, recall, and IoU across object scales.
+- **Upscaled Results:** Visualize metrics with upscaled values for enhanced comparison and analysis.
+
+---
+## Installation
+
+### Clone Repository
+```bash
+git clone https://github.com/MMUZAMMUL/GOIS.git
+cd GOIS
+
 
 ## Overview
 
