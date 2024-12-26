@@ -4,7 +4,7 @@
 
 ## Key Resources
 
-- **Results Graph**: <img src="examples/full_results.png" alt="Results Graph" width="600" height="400">
+- **Results Graph**: [![results](examples/full results.png)
 
 
 - **My Benchmarks Results**:  
