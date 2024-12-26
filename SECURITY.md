@@ -9,7 +9,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover any vulnerabilities or unauthorized usage of this repository, report it immediately to [your-email@example.com].
+If you discover any vulnerabilities or unauthorized usage of this repository, report it immediately to muzamal@zju.edu.cn.
 
 ### Policy on Intellectual Property Infringement
 
