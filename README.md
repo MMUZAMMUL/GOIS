@@ -4,7 +4,7 @@
 
 ## Key Resources
 
-- **Results Graph**: ![Results Graph](https://github.com/MMUZAMMUL/GOIS/raw/main/examples/full_results.png)
+- **Results Graph**: ![Results Graph](https://github.com/MMUZAMMUL/GOIS/main/examples/full_results.png)
 
 
 - **My Benchmarks Results**:  
