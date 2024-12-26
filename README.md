@@ -4,8 +4,8 @@
 
 ## Key Resources
 
-- **Results Graph**: ![examples/full results.png)  
-  *(Replace `path_to_your_image.png` with the actual path to your result image.)*
+- **Results Graph**: <img src="examples/full_results.png" alt="Results Graph" width="600" height="400">
+
 
 - **My Benchmarks Results**:  
   Directly download and verify the benchmarks from the [GOIS Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS).
