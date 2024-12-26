@@ -4,7 +4,7 @@
 
 ## Key Resources
 
-- **Results Graph**: [![results](examples/full results.png)
+- **Results Graph**: [![results](examples/full results.png)]
 
 
 - **My Benchmarks Results**:  
