@@ -3,8 +3,8 @@
 ---
 
 ## Key Resources
+- **Results Graph**: <img src="examples/_results.png" alt="Results Graph" width="600" height="400">
 
-[![Watch the video](examples/_results.png)](https://youtu.be/T5t5eb_w0S4)
 
 
 - **My Benchmarks Results**:  
