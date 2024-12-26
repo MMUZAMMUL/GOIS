@@ -20,7 +20,7 @@ Examples of unacceptable behavior include:
 
 ## Enforcement
 
-Violations of this Code of Conduct should be reported to [your-email@example.com]. All complaints will be reviewed promptly and fairly.
+Violations of this Code of Conduct should be reported to muzamal@zju.edu.cn. All complaints will be reviewed promptly and fairly.
 
 The author reserves the right to remove contributions, restrict access, or take legal action for any breaches of this Code of Conduct.
 
