@@ -17,13 +17,12 @@ By(MUZAMMUL-ZJU)
   </tr>
   <tr>
     <td>
-      <img src="examples/_results.png" alt="Results Graph" width="400">
+      <img src="examples/_results.png" alt="Results Graph" width="700">
     </td>
     <td>
-      <h3>Key Resources</h3>
       <ul>
         <li><b>My Benchmarks Results:</b>  
-        Directly download Benchmarks, Evaluate by STEP# 6&7.Results FI-Det, GOIS-Det COCO .json already available at <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Benhmarks Repository</a>.</li>
+        Directly download Benchmarks & Evaluate by STEP# 6&7.Results FI-Det, GOIS-Det COCO .json already available at <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Benhmarks Repository</a>.</li>
         <li><b>Live Demo:</b>  
         Watch the complete live demonstration on:  
           <ul>
@@ -38,7 +37,7 @@ By(MUZAMMUL-ZJU)
     </td>
   </tr>
       </table>
-## **More details for Understanding**
+More details for Understanding-"Click-arrow"
      <details> 
       <h3>Highlights</h3>
       <ul>
@@ -157,7 +156,7 @@ python scripts/evaluate_upscaling.py \
 ```
 
 ---
-
+<<<<<<<< Bellow Parts Code will be available soon
 
 ### **GOIS Test for Single Image**
 <details>
