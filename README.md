@@ -3,8 +3,8 @@
 [**MIT License**](LICENSE) - All rights reserved to the author. This project may be used for study and educational purposes, but **redistribution, redevelopment, or use of the code for personal or commercial purposes is strictly prohibited without the author's written consent.**
 
 # Enhancing Tiny Object Detection Without Fine-Tuning  
-**Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
-**Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**
+**Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**\
+**Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**\
 By(MUZAMMUL-ZJU)
 
 ---
@@ -46,7 +46,6 @@ By(MUZAMMUL-ZJU)
         <li><b>Validated Results:</b> Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.</li>
         <li><b>Significant Improvements:</b> Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.</li>
          <li><b>Apply on different DataType:</b> Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera.</li>
-        
       </ul>
     </td>
     <td>
@@ -62,6 +61,10 @@ By(MUZAMMUL-ZJU)
   </tr>
 </table>
 
+## Sections
+
+### **GOIS Test from Scratch: 15% Dataset VisDroneTrainDet2019**
+<details>
 ## Installation
 
 ### Clone Repository
@@ -147,6 +150,107 @@ python scripts/evaluate_upscaling.py \
 
 ---
 
+
+</details>
+
+---
+
+### **GOIS Test for Single Image**
+<details>
+  <summary><b>Click to Expand</b></summary>
+
+  #### **Run GOIS Inference for Single Image**
+  ```bash
+  python scripts/gois_inference.py \
+      --images_folder "<single_image_path>" \
+      --model_path "./Models/yolo11n.pt" \
+      --model_type "YOLO" \
+      --output_base_path "./data/gois_Predictions/"
+  ```
+
+</details>
+
+---
+
+### **GOIS Test for Multiple Images**
+<details>
+  <summary><b>Click to Expand</b></summary>
+
+  #### **Run GOIS Inference for Multiple Images**
+  ```bash
+  python scripts/gois_inference.py \
+      --images_folder "<path_to_images_folder>" \
+      --model_path "./Models/yolov8n.pt" \
+      --model_type "YOLO" \
+      --output_base_path "./data/gois_Predictions/"
+  ```
+
+</details>
+
+---
+
+### **GOIS Test for Low-Resolution Mobile Camera Images**
+<details>
+  <summary><b>Click to Expand</b></summary>
+
+  #### **Run GOIS Inference**
+  ```bash
+  python scripts/gois_inference.py \
+      --images_folder "<low_resolution_images_folder>" \
+      --model_path "./Models/yolo11n.pt" \
+      --model_type "YOLO" \
+      --output_base_path "./data/gois_Predictions/"
+  ```
+
+</details>
+
+---
+
+### **GOIS Test for Video**
+<details>
+  <summary><b>Click to Expand</b></summary>
+
+  #### **Process Video Using Full Inference**
+  ```bash
+  python scripts/full_inference_video.py \
+      --video_path "<path_to_video>" \
+      --model_path "./Models/yolov9.pt" \
+      --output_path "./data/video_predictions/"
+  ```
+
+  #### **Process Video Using GOIS**
+  ```bash
+  python scripts/gois_inference_video.py \
+      --video_path "<path_to_video>" \
+      --model_path "./Models/yolov9.pt" \
+      --output_path "./data/gois_video_predictions/"
+  ```
+
+</details>
+
+---
+
+### **GOIS Test for Live Camera**
+<details>
+  <summary><b>Click to Expand</b></summary>
+
+  #### **Run Live Inference**
+  ```bash
+  python scripts/live_camera_inference.py \
+      --model_path "./Models/yolo11n.pt" \
+      --output_path "./data/live_predictions/"
+  ```
+
+</details>
+
+---
+
+## Contact
+Author: **Muhammad Muzammul**  
+PhD Scholar-College of Computer Science and Technology, Zhejinag University,China.\
+Email: [muzamal@zju.edu.cn](mailto:muzamal@zju.edu.cn)  
+Email: [munagreat123@gmail.com](mailto:munagreat123@gmail.com)  
+
 ## Contributing
 Read the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
@@ -157,11 +261,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 For reporting vulnerabilities, refer to [SECURITY.md](SECURITY.md).
 
 ---
-
-## Contact
-Author: **Muhammad Muzammul**  
-PhD Scholar-College of Computer Science and Technology, Zhejinag University,China.\
-Email: [muzamal@zju.edu.cn](mailto:muzamal@zju.edu.cn)  
-Email: [munagreat123@gmail.com](mailto:munagreat123@gmail.com)  
-
-```
