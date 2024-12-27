@@ -6,6 +6,7 @@ setup(
     description="A professional package for GOIS-based inference, evaluation, and preprocessing",
     author="MUHAMMAD MUZAMMUL",
     author_email="munagreat123@gmail.com",
+    author_email="muzamal@zju.edu.cn",
     url="https://github.com/MMUZAMMUL/GOIS",
     packages=find_packages(include=["my_package", "my_package.*", "scripts.*"]),  # Include main packages and scripts
     include_package_data=True,  # Include non-Python files specified in MANIFEST.in
