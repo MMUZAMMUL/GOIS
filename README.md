@@ -81,6 +81,7 @@ Follow instructions in [Data-download-instructions](data/dataset.md) to prepare 
 ### 2. **Download Models**
 Run the script to download required models:
 ```bash
+%cd GOIS/Models
 python Models/download_models.py  # OR directly download from Ultralytics and upload in folder
 ```
 
@@ -88,14 +89,14 @@ python Models/download_models.py  # OR directly download from Ultralytics and up
 Generate COCO-format ground truth annotations:
 ```bash
 python /content/GOIS/scripts/generate_ground_truth.py \
-    --annotations_folder "/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/annotations" \
-    --images_folder "/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/images" \
+    --annotations_folder "<annotations_path>" \
+    --images_folder "<images_path>" \
     --output_coco_path "/content/GOIS/data/ground_truth/ground_truth_coco.json"
 ```
 
 ### 4. **Run Full Inference**
 Declare paths
-images_folder="/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/images"\
+images_folder="<images_path>"\
 model_path="/content/GOIS/Models/yolo11n.pt"\
 output_base_path="/content/GOIS/data/FI_Predictions"\
 model_type="YOLO"  # YOLO or RTDETR or YOLOWorld\
@@ -164,11 +165,7 @@ python scripts/evaluate_upscaling.py \
 
   #### **Run GOIS Inference for Single Image**
   ```bash
-  python scripts/gois_inference.py \
-      --images_folder "<single_image_path>" \
-      --model_path "./Models/yolo11n.pt" \
-      --model_type "YOLO" \
-      --output_base_path "./data/gois_Predictions/"
+  <<Adding code>>
   ```
 
 </details>
@@ -181,11 +178,7 @@ python scripts/evaluate_upscaling.py \
 
   #### **Run GOIS Inference for Multiple Images**
   ```bash
-  python scripts/gois_inference.py \
-      --images_folder "<path_to_images_folder>" \
-      --model_path "./Models/yolov8n.pt" \
-      --model_type "YOLO" \
-      --output_base_path "./data/gois_Predictions/"
+    <<Adding code>>
   ```
 
 </details>
@@ -198,11 +191,7 @@ python scripts/evaluate_upscaling.py \
 
   #### **Run GOIS Inference**
   ```bash
-  python scripts/gois_inference.py \
-      --images_folder "<low_resolution_images_folder>" \
-      --model_path "./Models/yolo11n.pt" \
-      --model_type "YOLO" \
-      --output_base_path "./data/gois_Predictions/"
+    <<Adding code>>
   ```
 
 </details>
@@ -215,18 +204,12 @@ python scripts/evaluate_upscaling.py \
 
   #### **Process Video Using Full Inference**
   ```bash
-  python scripts/full_inference_video.py \
-      --video_path "<path_to_video>" \
-      --model_path "./Models/yolov9.pt" \
-      --output_path "./data/video_predictions/"
+    <<Adding code>>
   ```
 
   #### **Process Video Using GOIS**
   ```bash
-  python scripts/gois_inference_video.py \
-      --video_path "<path_to_video>" \
-      --model_path "./Models/yolov9.pt" \
-      --output_path "./data/gois_video_predictions/"
+  <<Adding code>>
   ```
 
 </details>
@@ -239,9 +222,7 @@ python scripts/evaluate_upscaling.py \
 
   #### **Run Live Inference**
   ```bash
-  python scripts/live_camera_inference.py \
-      --model_path "./Models/yolo11n.pt" \
-      --output_path "./data/live_predictions/"
+    <<Adding code>>
   ```
 
 </details>
