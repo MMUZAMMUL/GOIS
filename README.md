@@ -4,6 +4,7 @@
 
 # Enhancing Tiny Object Detection Without Fine-Tuning  
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**
+**Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**
 By(MUZAMMUL-ZJU)
 
 ---
@@ -26,8 +27,8 @@ By(MUZAMMUL-ZJU)
         <li><b>Live Demo:</b>  
         Watch the complete live demonstration on:  
           <ul>
-            <li><a href="https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47">Bilibili</a></li>
-            <li><a href="https://youtu.be/T5t5eb_w0S4">YouTube</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47">Watch Vide-Bilibili</a></li>
+            <li><a href="https://youtu.be/T5t5eb_w0S4">Watch Vide-YouTube</a></li>
             <li><a href="data/dataset.md">Data download instructions</a></li>
             <li><a href="https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link">15% Dataset of VisdroneTrainDet2019</a></li>
             <li><a href="https://drive.google.com/file/d/1a2oHjcEcwXP8oUF95qiwrqzACb2YlUhn/view">Full-Dataset link Visdrone2019</a></li>
