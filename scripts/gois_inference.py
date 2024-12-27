@@ -2,7 +2,7 @@ import os
 import sys
 import argparse
 from ultralytics import YOLO, YOLOWorld, RTDETR
-from my_package.gois_inference import perform_sliced_inference
+from my_package.gois1_inference import perform_sliced_inference
 from my_package.fix_prediction import fix_predictions_format
 
 # Add the project root directory to the Python path
