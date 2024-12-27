@@ -17,17 +17,17 @@ By(MUZAMMUL-ZJU)
   </tr>
   <tr>
     <td>
-      <img src="examples/_results.png" alt="Results Graph" width="700">
+      <img src="examples/_results.png" alt="Results Graph" width="800">
     </td>
     <td>
       <ul>
-        <li><b>My Benchmarks Results:</b>  
+        <li><b>Benchmarks Results:</b>  
         Directly download Benchmarks & Evaluate by STEP# 6&7.Results FI-Det, GOIS-Det COCO .json already available at <a href="https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS">GOIS Benhmarks Repository</a>.</li>
         <li><b>Live Demo:</b>  
         Watch the complete live demonstration on:  
           <ul>
-            <li><a href="https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47">Watch Vide-Bilibili</a></li>
-            <li><a href="https://youtu.be/T5t5eb_w0S4">Watch Vide-YouTube</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web&vd_source=410cbe7831c2ac19912dbaf41a99fc47">Watch Video-Bilibili</a></li>
+            <li><a href="https://youtu.be/T5t5eb_w0S4">Watch Video-YouTube</a></li>
             <li><a href="data/dataset.md">Data download instructions</a></li>
             <li><a href="https://drive.google.com/drive/folders/12rsLCoPL_7w_oGKurWoDJ8gH1yQ77KJh?usp=drive_link">15% Dataset of VisdroneTrainDet2019</a></li>
             <li><a href="https://drive.google.com/file/d/1a2oHjcEcwXP8oUF95qiwrqzACb2YlUhn/view">Full-Dataset link Visdrone2019</a></li>
