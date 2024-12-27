@@ -45,6 +45,8 @@ By(MUZAMMUL-ZJU)
         <li><b>Architecture-Agnostic:</b> Integrates seamlessly with diverse state-of-the-art detection models (YOLO11, RT-DETR-L, YOLOv8n, etc.) without requiring retraining.</li>
         <li><b>Validated Results:</b> Evaluated on the VisDrone2019-DET dataset, low-resolution imagery, video streams, and live camera feeds, proving its robustness in real-world scenarios.</li>
         <li><b>Significant Improvements:</b> Enhances small and medium-sized object detection by **50–60%**, while maintaining high efficiency and precision.</li>
+         <li><b>Apply on different DataType:</b> Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera.</li>
+        
       </ul>
     </td>
     <td>
