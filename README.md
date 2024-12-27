@@ -63,7 +63,7 @@ By(MUZAMMUL-ZJU)
 
 ## Sections
 
-### **GOIS Test from Scratch: 15% Dataset VisDroneTrainDet2019**
+### **GOIS Test from Scratch: 15% Dataset as per Research Paper VisDroneTrainDet2019**
 <details>
 ## Installation
 
