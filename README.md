@@ -37,8 +37,9 @@ By(MUZAMMUL-ZJU)
       </ul>
     </td>
   </tr>
-  <tr>
-    <td>
+      </table>
+## **More details for Understanding**
+     <details> 
       <h3>Highlights</h3>
       <ul>
         <li><b>Adaptive Slicing:</b> Mitigates boundary artifacts and optimizes computational efficiency by reallocating resources dynamically.</li>
@@ -59,12 +60,11 @@ By(MUZAMMUL-ZJU)
       </ul>
     </td>
   </tr>
-</table>
-
+</details>
 ## Sections
-
+  
 ### **GOIS Test from Scratch: 15% Dataset as per Research Paper VisDroneTrainDet2019**
-<details>
+
 ## Installation
 
 ### Clone Repository
@@ -87,30 +87,37 @@ python Models/download_models.py  # OR directly download from Ultralytics and up
 ### 3. **Generate Ground Truth**
 Generate COCO-format ground truth annotations:
 ```bash
-python scripts/generate_ground_truth.py \
-    --annotations_folder "<path_to_annotations>" \
-    --images_folder "<path_to_images>" \
-    --output_coco_path ./data/ground_truth/ground_truth_coco.json  #Give path to save
+python /content/GOIS/scripts/generate_ground_truth.py \
+    --annotations_folder "/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/annotations" \
+    --images_folder "/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/images" \
+    --output_coco_path "/content/GOIS/data/ground_truth/ground_truth_coco.json"
 ```
 
 ### 4. **Run Full Inference**
+Declare paths
+images_folder="/content/gdrive/MyDrive/100%GOIS/TEST-GOIS15%/VisDrone2019-DET-train-15%Subset970-Images/images"\
+model_path="/content/GOIS/Models/yolo11n.pt"\
+output_base_path="/content/GOIS/data/FI_Predictions"\
+model_type="YOLO"  # YOLO or RTDETR or YOLOWorld\
+
 Perform full image inference:
 ```bash
-python scripts/full_inference.py \
-    --images_folder "<path_to_images>" \  # Give path of testing images
-    --model_path "./Models/yolo11n.pt" \   #Give path of model to perform prediction
-    --model_type "YOLO" # YOLO or RTDETR or YOLOWorld
-    --output_base_path "./data/FI_Predictions/"  # Give path to save output images
+python /content/GOIS/scripts/full_inference.py \
+    --images_folder "$images_folder" \
+    --model_path "$model_path" \
+    --model_type "$model_type" \
+    --output_base_path "$output_base_path"
 ```
 
 ### 5. **Run GOIS Inference**
+can change just putput path-> output_base_path="/content/GOIS/data/gois_Predictions"\
 Perform sliced inference using GOIS:
 ```bash
-python scripts/gois_inference.py \
-     --images_folder "<path_to_images>" \  # Give path of testing images
-    --model_path "./Models/yolov8s-worldv2.pt" \   #Give path of model to perform prediction
-    --model_type "YOLO" # YOLO or RTDETR or YOLOWorld
-    --output_base_path "./data/gois_Predictions/"  # Give path to save output images
+python /content/GOIS/scripts/gois_inference.py \
+    --images_folder "$images_folder" \
+    --model_path "$model_path" \
+    --model_type "$model_type" \
+    --output_base_path "$output_base_path"
 ```
 
 ### 6. **Evaluate Results**
@@ -150,10 +157,6 @@ python scripts/evaluate_upscaling.py \
 
 ---
 
-
-</details>
-
----
 
 ### **GOIS Test for Single Image**
 <details>
