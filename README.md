@@ -12,7 +12,7 @@ By(MUZAMMUL-ZJU)
 <table>
   <tr>
     <td colspan="2">
-      Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Dynamic Adaptive Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage adaptive slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).
+      Tiny Object Detection (TOD) in high-resolution imagery poses significant challenges due to issues like low resolution, occlusion, and cluttered backgrounds. The **Guided Object Inference Slicing (GOIS)** framework addresses these challenges with a novel **two-stage hierarchical slicing strategy**. By dynamically reallocating computational resources to Regions of Interest (ROIs), the framework enhances detection precision and efficiency, achieving **3–4× improvements** in key metrics such as Average Precision (AP) and Average Recall (AR).
     </td>
   </tr>
   <tr>
