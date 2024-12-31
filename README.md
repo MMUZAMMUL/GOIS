@@ -5,7 +5,7 @@
 # Enhancing Tiny Object Detection Without Fine-Tuning - Guided-Object Inference Sclicing (GOIS) Novel Framework
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**\
 **Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**\
-By(MUZAMMUL-ZJU)
+By: Muhammad Muzammul, Xuewei Li, Xi Li
 
 ---
 
