@@ -1,10 +1,18 @@
 ### License
 
 [**MIT License**](LICENSE) - All rights reserved to the author. This project may be used for study and educational purposes, but **redistribution, redevelopment, or use of the code for personal or commercial purposes is strictly prohibited without the author's written consent.**
-
+### Citation  
+```bash
+@ MUHAMMAD MUZAMMUL, Xuewei LI, Xi Li et al.  
+Enhancing Tiny Object Detection without Fine Tuning:  
+Dynamic Adaptive Guided Object Inference Slicing Framework  
+with Latest YOLO Models and RT-DETR Transformer,  
+07 January 2025, PREPRINT (Version 1) available at Research Square  
+[https://doi.org/10.21203/rs.3.rs-5780163/v1]
+```
 # Enhancing Tiny Object Detection Without Fine-Tuning - Guided-Object Inference Sclicing (GOIS) Novel Framework
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**\
-**Apply on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**\
+**Applied on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**\
 By: Muhammad Muzammul, Xuewei Li, Xi Li
 
 ---
