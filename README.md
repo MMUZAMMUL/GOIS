@@ -4,9 +4,11 @@
 # Enhancing Tiny Object Detection Without Fine-Tuning - Guided-Object Inference Sclicing (GOIS) Novel Framework
 **Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer**\
 **Applied on High Quality Images/Low Quality Mobile Camera Images/Apply GOIS on Video/ Apply Inside Live Camera**\
-By: Muhammad Muzammul, Xuewei Li, Xi Li
+By: Muhammad Muzammul, Xuewei Li, Xi Li \
+-> Research Paper also Underreview in  Journal 
+<a href="https://www.sciencedirect.com/journal/neurocomputing">Nurocomputing</a>
 
-### Citation  
+### Citation, Preprint Available  
 ```bash
 @ MUHAMMAD MUZAMMUL, Xuewei LI, Xi Li et al.  
 Enhancing Tiny Object Detection without Fine Tuning:  
