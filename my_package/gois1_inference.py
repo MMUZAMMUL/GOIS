@@ -54,7 +54,7 @@ def perform_sliced_inference(images_folder, model, predictions_path, annotated_i
                 "height": height
             })
 
-            # Generate slices
+        
             step = int(slice_size * (1 - overlap))
             image_predictions = []
             for y in range(0, height, step):
@@ -62,14 +62,14 @@ def perform_sliced_inference(images_folder, model, predictions_path, annotated_i
                     x_end = min(x + slice_size, width)
                     y_end = min(y + slice_size, height)
 
-                    # Crop slice
+                
                     slice_box = (x, y, x_end, y_end)
                     img_slice = img.crop(slice_box)
 
-                    # Run inference on slice
+                   
                     results = model.predict(img_slice, conf=0.25)[0]
 
-                    # Map slice results back to original image coordinates
+                   
                     for box in results.boxes:
                         x_min, y_min, x_max, y_max = box.xyxy[0].tolist()
                         w, h = x_max - x_min, y_max - y_min
@@ -93,7 +93,7 @@ def perform_sliced_inference(images_folder, model, predictions_path, annotated_i
                             image_predictions.append(annotation)
                             annotation_id += 1
 
-            # Save annotated image
+           
             annotated_image = draw_detections_on_image(img.copy(), image_predictions)
             annotated_image.save(os.path.join(annotated_images_folder, image_file))
 
