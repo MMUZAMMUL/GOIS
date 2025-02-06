@@ -22,7 +22,6 @@ Below is a list of available GOIS test environments with descriptions, tested da
 | **Live Camera Advanced Detection (FI vs. GOIS, Two Outputs)** <br> Configurable Parameters | Real-Time Live Camera <br> Datasets: UAV Road Surveillance, Pedestrian & Vehicle Detection (40-50ft), Tiny Object Analysis | YOLO11, YOLOv10, YOLOv9, YOLOv8, YOLOv6, YOLOv5, RT-DETR-L, YOLOv8s-Worldv2 | Advanced GOIS Slicing: Adaptive slicing based on object density, enhances occluded and small object detection, optimizes real-time performance. | Sec. TBD | [GOIS Live Camera Advanced Level](https://huggingface.co/spaces/MMUZAMMUL123/GOIS_LiveCamera_AdvanceLevel) |
 
 ---
-
 ### **How to Use the GOIS Test Links**
 1. **Click on any of the test links** in the table above.
 2. **Upload an image or video** (or use live camera mode).
@@ -30,9 +29,34 @@ Below is a list of available GOIS test environments with descriptions, tested da
 4. **Compare GOIS vs. Full Image Inference results** and analyze small object detection performance.
 5. **View processed results in real-time** and test different models.
 
-For more details, please refer to the **research paper** where these experiments and methodologies are explained in depth.
+---
+## 📌 Google Colab Live Test Links for GOIS
+
+To validate the **Guided Object Inference Slicing (GOIS)** framework, the following **Google Colab** test notebooks are available for real-time inference and analysis. These tests allow users to **compare GOIS with full-image detection (FI-Det)** across different datasets and parameter settings.
+
+### 📝 **Table: GOIS Colab Test Links**
+| 🚀 **Function/Purpose** | 🗂 **Tested Data/Type** | 🏆 **Models Applied** | 🔍 **Short Description** | 🔗 **Test Link (Live)** |
+|-------------------------|------------------------|----------------------|------------------------|----------------------|
+| **GOIS (Coarse/Fine) Slicing Methdology vs. Static that is our own proposal for SAHI/ASAHI Techniques(we not use any existing code)** | VisDrone, UAV Surveillance (100-150ft), Pedestrian & Tiny Object Detection, Geo-Sciences | YOLO11, YOLOv10, YOLOv9, YOLOv8, YOLOv6, YOLOv5, RT-DETR-L, YOLOv8s-Worldv2 | Comparative analysis of **GOIS dynamic slicing** vs. **static slicing (SAHI, ASAHI-like)** (proposed and tested by us). | [🔗 GOIS vs. Own proposed Method for SAHI/ASAHI(we develop our code)](https://colab.research.google.com/drive/1QTgSVe4_PYqPC5uBEcjA5bTcvDNc_Wbc?usp=sharing) |
+| **Visual Test - GOIS (Single Image Inference)** | Same as above | Same as above | Users can **download a model**, load any image, set paths, and run GOIS inference. | [🔗 GOIS Single Image Test](https://colab.research.google.com/drive/1TPQKq_17Wg1NiXD5Mah0a_6bkOt4-t9b?usp=sharing) |
+| **FI-Det vs. GOIS-Det (Single Image Test)** | Same as above | Same as above | Direct comparison of **GOIS-Det vs. FI-Det** on a **single image** (outputs two images). | [🔗 GOIS vs. FI-Det (Single Image)](https://colab.research.google.com/drive/1ijdnfFA3tQ9PSJDMqPXCka3KRWhrblIh?usp=sharing) |
+| **FI-Det vs. GOIS-Det (Multiple Images Test)** | Same as above | Same as above | Tests **GOIS-Det vs. FI-Det** on **multiple images** with direct visual comparison. | [🔗 GOIS vs. FI-Det (Multiple Images)](https://colab.research.google.com/drive/1kwGJDVoSZ4NOTQsxdsYreYz_twRhoX0S?usp=sharing) |
+| **Count-Based Metrics Detection (FI-Det vs. GOIS-Det)** | Same as above | Same as above | Computes **detection count, object area coverage, and inference speed** for both methods. | [🔗 GOIS vs. FI-Det (Metrics Test)](https://colab.research.google.com/drive/1X1t-L3tW1bIfVT6PtzKKFqU52PEMqivI?usp=sharing) |
+| **Slice Size Optimized Speed Test (FI-Det vs. GOIS-Det)** | Same as above | Same as above | Analyzes **how different slicing sizes impact inference speed and accuracy**. | [🔗 GOIS Optimized Speed Test](https://colab.research.google.com/drive/1LYFnEjIinIW_4HHyVYVtg7aZVikWfnea?usp=sharing) |
+| **GOIS - 81 Combinations Test (Stage 1 & 2 Slicing, IOU, NMS)** | VisDrone, UAV Surveillance, Single Image Input | Same as above | **Tests 81 different GOIS parameter combinations** (slice sizes, overlap rates, NMS thresholds). | [🔗 GOIS 81 Combinations Test](https://colab.research.google.com/drive/18H8HtFYDc0On6KMAIkfxW5xWW1hsUeFc?usp=sharing) |
+| **GOIS - Three Ideal Slicing Conditions Test (Stage 1 & 2 Slicing, IOU, NMS)** | Same as above | Same as above | Evaluates three **best GOIS configurations**: <br>🔹 **C1**: 512 px / 128 px (0.1 overlap, NMS 0.3) <br>🔹 **C2**: 640 px / 256 px (0.2 overlap, NMS 0.4) <br>🔹 **C3**: 768 px / 384 px (0.3 overlap, NMS 0.5) | [🔗 GOIS Ideal Slicing Test](https://colab.research.google.com/drive/1Zi5b1dXFG3gZyxwSLDiG6g-EIarUnAjK?usp=sharing) |
 
 ---
+
+### 🛠 **How to Use**
+1.✅ **Open any Colab link** 🔗 from the table above.
+2.✅ **Run the notebook**, follow the instructions to set model paths and data.
+3.✅ **Upload custom images** if needed or use provided test datasets.
+4.✅ **Compare results** between **GOIS vs. FI-Det** and adjust parameters.
+
+---
+
+
 
 ### **Cite This Work**
 If you use GOIS in your research, please consider citing our paper:
