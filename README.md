@@ -82,6 +82,31 @@ GOIS differs from traditional slicing methods (SAHI, ASAHI) by **dynamically adj
 1️⃣ **Open any Colab link** → 2️⃣ **Run the notebook** → 3️⃣ **Upload images or use datasets** → 4️⃣ **Adjust GOIS parameters (slice size, overlap, NMS)** → 5️⃣ **Compare FI vs. GOIS results**  
 
 ---
+## 📊 GOIS Benchmark Results - Performance Comparison Across Datasets
+
+The following tables present **benchmark evaluations** of the **Guided Object Inference Slicing (GOIS) framework**, comparing **Full Inference (FI-Det) vs. GOIS-Det** across different datasets and model configurations. 
+
+GOIS integrates a **two-stage hierarchical slicing strategy**, dynamically adjusting **slice size, overlap rate, and NMS thresholds** to optimize detection performance. These results highlight **improvements in small object detection**, **reduction of boundary artifacts**, and **comparisons with existing slicing methods like SAHI and ASAHI**.
+
+| **Test/Part** | **Dataset & Setup** | **Description** | **Benchmark Link** |
+|--------------|---------------------|----------------|--------------------|
+| **Part 1** | **Without Fine-Tuning - 15% Dataset (970 Images) - VisDrone2019Train** | Evaluates FI-Det vs. GOIS-Det on a **small dataset subset**. The table presents **AP and AR metrics for seven models**, comparing detection performance with and without GOIS enhancements. The percentage improvement achieved by GOIS is included for each model. | 📌 [Section 1 - GOIS Benchmarks](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks) |
+| **Part 2** | **Fine-Tuned Models (10 Epochs) - Full Dataset (6,471 Images) - VisDrone2019Train** | GOIS performance is tested after **10 epochs of fine-tuning**. The **impact of GOIS slicing parameters (coarse-fine slice size, overlap rate, NMS filtering) is analyzed**. The table provides **detailed AP and AR metrics for five models**, highlighting GOIS's ability to improve small object recall while managing computational efficiency. | 📌 [Section 2 - GOIS Benchmarks](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks) |
+| **Part 3** | **Without Fine-Tuning - Five Models - Full Dataset (6,471 Images) - VisDrone2019Train** | Evaluates **GOIS on a large-scale dataset without fine-tuning**, highlighting its **robust generalization ability**. **Comparative results for five models (YOLO11, YOLOv10, YOLOv9, YOLOv8, YOLOv5) include FI-Det, GOIS-Det, and % improvement achieved by GOIS.** This setup assesses GOIS’s impact on both small and large object detection. | 📌 [Section 3 - GOIS Benchmarks](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks) |
+| **Part 4** | **General Analysis - Pretrained Weights on VisDrone, xView, MS COCO** | GOIS's adaptability is tested across **multiple datasets and model architectures**. This section evaluates **pretrained YOLO and transformer-based detectors** (e.g., RT-DETR-L) to measure **cross-domain effectiveness, computational trade-offs, and improvements in occlusion handling**. **Key focus: Can GOIS be applied universally?** | 📌 [Section 4,5 - GOIS Benchmarks](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks) |
+| **Part 5** | **Comparative Analysis - SAHI vs. ASAHI vs. GOIS** | A **quantitative and qualitative comparison** between GOIS and **other slicing frameworks (SAHI, ASAHI)** across **VisDrone2019 and xView datasets**. This section examines: 1️⃣ **Boundary artifact reduction**, 2️⃣ **False positive minimization**, and 3️⃣ **Effectiveness of dynamic slicing in handling occlusion issues**. Detailed benchmark tables are included. | 📌 [Section 4,5 - GOIS vs. SAHI/ASAHI Benchmarks](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks) |
+
+---
+
+### 🔍 **Key Improvements in GOIS Over Other Methods**
+✅ **Dynamic Slicing Optimization**: Unlike static SAHI/ASAHI methods, GOIS **adjusts slice sizes and overlap rates** based on object density, reducing redundant processing.  
+✅ **Occlusion Handling & Boundary Artifact Reduction**: GOIS minimizes **false detections** and **truncated object artifacts** by dynamically refining inference slices.  
+✅ **Scalability Across Models & Datasets**: Successfully applied to **YOLO models, RT-DETR, and various datasets**, proving its **universal applicability**.  
+✅ **Performance Gains in Small Object Detection**: GOIS consistently improves **AP-Small and AR-Small metrics**, as validated on **VisDrone and xView datasets**.  
+
+📌 **For additional benchmark results and evaluation scripts, visit:**
+[GOIS Benchmarks Repository](https://github.com/MMUZAMMUL/TinyObjectDetectionGOIS-Benchmarks)
+
 
 ### **Cite This Work**
 If you use GOIS in your research, please consider citing our paper:
