@@ -39,6 +39,27 @@ with Latest YOLO Models and RT-DETR Transformer,
 🔑 **MIT License** - Study & Educational Use Only  
 📧 **Contact**: *[Author Email](mailto:muzamal@zju.edu.cn)*  
 
+# 🚀 GOIS Live Deployed Applications on Gradio ✅  
+
+Explore the **GOIS-Det vs. FI-Det** benchmark results through live interactive applications on **Gradio**. These applications provide detailed comparisons using graphs, tables, and output images, demonstrating the effectiveness of **GOIS-Det** in tiny object detection.
+
+## 🔥 Live Benchmark Tests
+
+| **Test Function** | **Description** | **Live Test** |
+|-------------------|---------------|--------------|
+| **1️⃣ Single Image Analysis (GOIS-Det vs. FI-Det)** | Perform a single image test to visualize graphs and results, comparing **FI-Det vs. GOIS-Det**. View detection metrics such as the number of detections and class diversity. Outputs include **pie charts, bar charts, and two comparative images** that highlight the significance of GOIS. | [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?logo=googlecolab&style=for-the-badge)](https://colab.research.google.com/drive/1RM4WAPRlrCXaIwXDrWmt_lglsWkIN1eU?usp=sharing) |
+| **2️⃣ Multiple Images Analysis (GOIS-Det vs. FI-Det)** | Upload multiple images simultaneously and compare **GOIS-Det** and **FI-Det** outputs. A table of detection metrics is generated to clearly evaluate the improvements achieved by GOIS. | [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?logo=googlecolab&style=for-the-badge)](https://colab.research.google.com/drive/1JqDhiLBb5sDNhh5z0pleiVvwpEzMtd2_?usp=sharing) |
+| **3️⃣ Video Analysis (GOIS-Det vs. FI-Det)** | Perform a **video-based** evaluation of GOIS-Det vs. FI-Det. The application generates a table comparing the number of detections and detected classes, providing insights into GOIS's effectiveness. | [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?logo=googlecolab&style=for-the-badge)](https://colab.research.google.com/drive/1dRQepcV3ddQQOvHfRmlkOCbSZ4qHZr3b?usp=sharing) |
+| **4️⃣ Metrics Evaluation & Results Graphs (GOIS-Det vs. FI-Det)** | Compare key detection metrics, including **AP, AR, mAP, and F1-score** for FI-Det and GOIS-Det. View **graphs, tables, percentage improvements, and output images** to assess GOIS's impact on detection performance. | [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?logo=googlecolab&style=for-the-badge)](https://colab.research.google.com/drive/1mhP8Z2-eWlGDKqg8tl0hGfghVpW6Nt55?usp=sharing) |
+
+---
+
+### 📌 Instructions:
+1. Click on any **"Open in Colab"** button above to launch the interactive notebook.
+2. Follow the instructions in the notebook to test **GOIS-Det vs. FI-Det**.
+3. Evaluate detection performance using provided visualizations and metrics.
+
+
 ## 🚀 GOIS Live Deployed Applications on Hugging Face ✅ <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="32">
 Experience **Guided Object Inference Slicing (GOIS)** across **images, videos, and live cameras** with configurable parameters. Evaluate **real-time small object detection** and compare against **full-image inference (FI-Det).**  
 
