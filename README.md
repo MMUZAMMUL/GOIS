@@ -32,7 +32,7 @@ with Latest YOLO Models and RT-DETR Transformer,
 
 ---
 
-### 📊 Benchmarks & Live Demo  
+### 📊 Test GOIS Benchmarks & Gradio Live Deployement
 📂 [GOIS Benchmarks Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS)  
 🎥 [Watch Live Demo (YouTube)](https://youtu.be/T5t5eb_w0S4) | 🎥 [Watch Live Demo (Bilibili)](https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web)  
 
@@ -43,7 +43,7 @@ with Latest YOLO Models and RT-DETR Transformer,
 
 Explore the **GOIS-Det vs. FI-Det** benchmark results through live interactive applications on **Gradio**. These applications provide detailed comparisons using graphs, tables, and output images, demonstrating the effectiveness of **GOIS-Det** in tiny object detection.
 
-## 🔥 Live Benchmark Tests
+## 🔥 Live Benchmark Tests different categories
 
 | **Test Function** | **Description** | **Live Test** |
 |-------------------|---------------|--------------|
