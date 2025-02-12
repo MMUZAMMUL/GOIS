@@ -1,7 +1,8 @@
 ### License
 
 [**MIT License**](LICENSE) - All rights reserved to the author. This project may be used for study and educational purposes, but **redistribution, redevelopment, or use of the code for personal or commercial purposes is strictly prohibited without the author's written consent.**
-
+---
+🎥 [Watch Live Demo (YouTube)](https://youtu.be/ukWUfXBFZ5I) | 🎥 [Watch Live Demo (Bilibili)](https://www.bilibili.com/video/BV1sLKjebEQK/?vd_source=f4edde9395a4d640571ae4487880e1ce)  
 ## 🚀 Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An Efficient Dynamic Adaptive Framework for Fine-Tuned and Non-Fine-Tuned Deep Learning Models
 **Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
@@ -34,7 +35,7 @@ with Latest YOLO Models and RT-DETR Transformer,
 
 ### 📊 Test GOIS Benchmarks & Gradio Live Deployement
 📂 [GOIS Benchmarks Repository](https://github.com/MMUZAMMUL/TinyObjectDetection-GOIS)  
-🎥 [Watch Live Demo (YouTube)](https://youtu.be/T5t5eb_w0S4) | 🎥 [Watch Live Demo (Bilibili)](https://www.bilibili.com/video/BV1jJCFYGEY4/?share_source=copy_web)  
+🎥 [Watch Live Demo (YouTube)](https://youtu.be/ukWUfXBFZ5I) | 🎥 [Watch Live Demo (Bilibili)](https://www.bilibili.com/video/BV1sLKjebEQK/?vd_source=f4edde9395a4d640571ae4487880e1ce)  
 
 🔑 **MIT License** - Study & Educational Use Only  
 📧 **Contact**: *[Author Email](mailto:muzamal@zju.edu.cn)*  
