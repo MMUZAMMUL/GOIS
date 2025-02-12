@@ -2,8 +2,8 @@
 
 [**MIT License**](LICENSE) - All rights reserved to the author. This project may be used for study and educational purposes, but **redistribution, redevelopment, or use of the code for personal or commercial purposes is strictly prohibited without the author's written consent.**
 
-## 🚀 GOIS: Enhancing Tiny Object Detection Without Fine-Tuning
-**Guided-Object Inference Slicing (GOIS) with YOLO & RT-DETR**  
+## 🚀 Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An Efficient Dynamic Adaptive Framework for Fine-Tuned and Non-Fine-Tuned Deep Learning Models
+**Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
 📄 Under Review in *Neurocomputing*  
 
