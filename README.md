@@ -9,12 +9,9 @@
 
 ### 📌 Citation
 ```bash
-@ MUHAMMAD MUZAMMUL, Xuewei LI, Xi Li et al.  
-Enhancing Tiny Object Detection without Fine Tuning:  
-Dynamic Adaptive Guided Object Inference Slicing Framework  
-with Latest YOLO Models and RT-DETR Transformer,  
-07 January 2025, PREPRINT (Version 1)  
-[https://doi.org/10.21203/rs.3.rs-5780163/v1]
+**MUZAMMUL, MUHAMMAD and LI, Xuewei and Li, Xi**,  
+*"Enhancing Tiny Object Detection Without Fine Tuning: Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer."*  
+Available at [SSRN](https://ssrn.com/abstract=5092517) or via DOI: [10.2139/ssrn.5092517](http://dx.doi.org/10.2139/ssrn.5092517)
 ```
 ### 📥 Quick Start
 | **Step** | **Command** |
