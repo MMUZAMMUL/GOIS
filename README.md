@@ -6,6 +6,7 @@
 **Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
 📄 Under Review in *Neurocomputing*  
+**Contact**: muzamal@zju.edu.cn 
 
 ### 📌 Citation
 ```bash
