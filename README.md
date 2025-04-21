@@ -4,7 +4,7 @@
 ## 🚀 Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An Efficient Dynamic Adaptive Framework for Fine-Tuned and Non-Fine-Tuned Deep Learning Models
 **Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
-📄 Under Review in *Neurocomputing*  
+📄 Accepted in *Neurocomputing* Journal  
 **Contact**: muzamal@zju.edu.cn 
 
 ### 📌 Citation
