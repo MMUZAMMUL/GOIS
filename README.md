@@ -4,14 +4,24 @@
 ## 🚀 Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An Efficient Dynamic Adaptive Framework for Fine-Tuned and Non-Fine-Tuned Deep Learning Models
 **Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
-📄 Accepted in *Neurocomputing* Journal  
+📄 Published in *Neurocomputing* Journal-> https://doi.org/10.1016/j.neucom.2025.130327
 **Contact**: muzamal@zju.edu.cn 
 
 ### 📌 Citation
 ```bash
-**MUZAMMUL, MUHAMMAD and LI, Xuewei and Li, Xi**,  
-*"Enhancing Tiny Object Detection Without Fine Tuning: Dynamic Adaptive Guided Object Inference Slicing Framework with Latest YOLO Models and RT-DETR Transformer."*  
-Available at [SSRN](https://ssrn.com/abstract=5092517) or via DOI: [10.2139/ssrn.5092517](http://dx.doi.org/10.2139/ssrn.5092517)
+@article{MUZAMMUL2025130327,
+  title     = {Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An efficient dynamic adaptive framework for fine-tuned and non-fine-tuned deep learning models},
+  journal   = {Neurocomputing},
+  pages     = {130327},
+  year      = {2025},
+  issn      = {0925-2312},
+  doi       = {https://doi.org/10.1016/j.neucom.2025.130327},
+  url       = {https://www.sciencedirect.com/science/article/pii/S0925231225009993},
+  author    = {Muhammad Muzammul and Xuewei Li and Xi Li},
+  keywords  = {Tiny Object Detection, Guided Object Inference Slicing (GOIS), Adaptive slicing-based detection, UAV-based real-time inference, High-resolution remote sensing imagery, Computationally efficient object detection, Deep learning for small-object recognition, Non-maximum suppression optimization, Transformer-based object detection},
+  abstract  = {Tiny Object Detection (TOD) in UAV and standard imaging remains challenging due to extreme scale variations, occlusion, and cluttered backgrounds. This paper presents the Dynamic Adaptive Guided Object Inference Slicing (GOIS) framework, a two-stage adaptive slicing strategy that dynamically reallocates computational resources to Regions of Interest (ROIs), enhancing detection precision and recall. Unlike static and semi-adaptive slicing methods like SAHI and ASAHI, evaluated with models such as FNet, TOOD, and TPH-YOLO, GOIS leverages VisDrone and xView datasets to optimize hierarchical slicing and dynamic Non-Maximum Suppression (NMS), improving tiny object detection while reducing boundary artifacts and false positives. Comprehensive experiments using MS COCO-pretrained Ultralytics models under fine-tuning and non-fine-tuning conditions validate its effectiveness. Evaluations across YOLO11, RT-DETR-L, YOLOv8s-WorldV2, YOLOv10, YOLOv8, and YOLOv5 demonstrate that GOIS consistently outperforms Full-Image Inference (FI-Det), achieving up to 3-4× improvements in small-object recall. On the VisDrone2019 dataset, GOIS-Det improved mAP@0.50:0.95 from 0.12 (FI-Det) to 0.33 (+175%) on YOLO11 and from 0.18 to 0.38 (+111.10%) on YOLOv5n. Fine-tuning further enhanced AP-Small by 278.66% and AR-Small by 279.22%, confirming GOIS’s adaptability across diverse deployment scenarios. Additionally, GOIS reduced false positives by 40%–60%, improving real-world detection reliability. Ablation studies validate GOIS’s hierarchical slicing and parameter optimization, with 640-pixel coarse slices and 256-pixel fine slices achieving an optimal balance between accuracy and efficiency. As the first open-source TOD slicing framework on Hugging Face Apps and Google Colab, GOIS delivers real-time inference, open-source code, and live demonstrations, establishing itself as a breakthrough in object detection.}
+}
+
 ```
 ### 📥 Quick Start
 | **Step** | **Command** |
