@@ -24,6 +24,7 @@ abstract = {Tiny Object Detection (TOD) in UAV and standard imaging remains chal
 }
 
 ```
+![Graphical Abstract](https://github.com/MMUZAMMUL/GOIS/raw/main/data/GA-.jpg)
 ### 📥 Quick Start
 | **Step** | **Command** |
 |----------|------------|
