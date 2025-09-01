@@ -2,7 +2,7 @@
 
 🎥 [Watch Live Demo (YouTube)](https://youtu.be/ukWUfXBFZ5I) | 🎥 [Watch Live Demo (Bilibili)](https://www.bilibili.com/video/BV1sLKjebEQK/?vd_source=f4edde9395a4d640571ae4487880e1ce)  
 ## 🚀 Enhancing Tiny Object Detection Using Guided Object Inference Slicing (GOIS): An Efficient Dynamic Adaptive Framework for Fine-Tuned and Non-Fine-Tuned Deep Learning Models
-**Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface**  
+**Guided-Object Inference Slicing (GOIS) Innovatory Framework with Several Open source code Deployed on Google Colab/Gradio Live/Huggingface- NEW Legendary INNOVATION**  
 🔬 Research by: Muhammad Muzammul, Xuewei Li, Xi Li  
 📄 Published in *Neurocomputing* Journal-> https://doi.org/10.1016/j.neucom.2025.130327
 **Contact**: muzamal@zju.edu.cn 
